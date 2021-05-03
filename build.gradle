@@ -42,3 +42,5 @@ task run(type: JavaExec) {
     classpath sourceSets.main.runtimeClasspath
     main = "com.company.Main"
 }*/
+
+build.dependsOn cucumber
