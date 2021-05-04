@@ -4,10 +4,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Storage {
+
     public int y;
     public int x;
     public ArrayList<Column> columns;
     public int[][] reserved;
+
     public Storage(int _length, int _width){
         y = _length;
         x = _width;
@@ -19,6 +21,7 @@ public class Storage {
             }
         }
     }
+
     public boolean fit(Package p, int startx, int starty){
         if(p.x + startx > x || p.y + starty > y)
             return false;
