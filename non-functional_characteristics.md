@@ -36,4 +36,15 @@ after the other, the waiting time for the outputs are little to non-existent so 
 any internet connection so there is no other factor that could influence the programs performance under a stresstest.
 
 ## Security
+
+## Usability
+
+First of all the most significant issue from a usability point of view is that the program does not have a user interface, it only accepts input through the console. This makes
+using the program difficult and slow and it is hard to see what the numbers represent in the input text. Also it is really easy to make a mistake and not notice it and then we will get an invalid output (or no output at all).
+
+The second big issue is that the program does not validate the input it any way. So if we say in the input that we have 5 columns in the storage but we only give the position of four then the program crashes or even worse it gives a wrong output which may go unnoticed by the user. Same thing also applies with packages and their sizes.
+
+During writing the tests we found that in some cases if we give an input with smaller storage capacity then the overall size of the packages, the program might produce an output
+which will be incorrect. This could be an issue if a user does not notice it right away.
+
  
