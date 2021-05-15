@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'jacoco'
+    id "org.sonarqube" version "3.2.0"
 }
 
 group 'org.example'
@@ -9,6 +10,14 @@ version '1.0-SNAPSHOT'
 jacoco {
     toolVersion = "0.8.6"
     reportsDir = file("$buildDir/jacoco")
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "BME-MIT-IET_iet-hf2021-samurai-mashers"
+    property "sonar.organization", "bme-mit-iet-org"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 repositories {
