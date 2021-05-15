@@ -37,6 +37,12 @@ any internet connection so there is no other factor that could influence the pro
 
 ## Security
 
+We checked the security vulnerabilities by adding SonarQube to the repository because SonarQube checks the code for security hotspots as well. After we ran SonarQube, we found that there are no security hotspots in our project as you can see in this picture below:
+
+![](security.PNG)
+
+Additionally this project is hard to use for malicious purposes because it does not need or use an network connection so the only way to modify it would be to get control over the computer it is installed on. Moreover the project's runtime is really short so modifying to generate false results or running something in the backround is not worth it.  
+
 ## Usability
 
 First of all the most significant issue from a usability point of view is that the program does not have a user interface, it only accepts input through the console. This makes
